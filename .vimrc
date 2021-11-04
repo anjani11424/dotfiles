@@ -1,3 +1,14 @@
+call plug#begin('~/.vim/plugged')
+
+Plug 'SirVer/ultisnips' 
+Plug 'unblevable/quick-scope'
+Plug 'junegunn/fzf.vim'
+Plug 'tpope/vim-unimpaired'
+Plug 'tpope/vim-fugitive'
+Plug 'gruvbox-community/gruvbox'
+
+" Initialize plugin system
+call plug#end()
 
 "==============================================================================
 " Settings
@@ -127,3 +138,7 @@ function! VisualSelection(direction, extra_filter) range
     let @/ = l:pattern
     let @" = l:saved_reg
 endfunction
+
+
+source "$HOME/.vim/fzf_map.vim"
+source "$HOME/.vim/others.vim"
