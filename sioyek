@@ -1,0 +1,26 @@
+##------------------ keys_user.config ------------
+
+goto_mark '
+toggle_fullscreen zz
+next_page <C-d>
+previous_page <C-u
+
+
+
+##-------------------- prefs_user.config ---------
+create_table_of_contents_if_not_exists 1
+max_created_toc_size 5000
+
+## Sepia mode - mimicking a book
+custom_background_color              0.957 0.925 0.847
+custom_text_color                    0.357 0.275 0.212
+
+#custom_background_color              0.878 0.878 0.878
+#custom_text_color                    0.376 0.376 0.376
+#custom_link_color                    0.251 0.251 0.251
+
+#custom_background_color              0.075 0.102 0.075
+#custom_text_color                    0.875 0.875 0.835
+#custom_link_color                    0.600 0.800 0.600
+
+startup_commands             toggle_custom_color;toggle_visual_scroll
