@@ -1,4 +1,3 @@
-// Place your key bindings in this file to override the defaults
 [
     {
         "key": "ctrl+p",
@@ -6,6 +5,50 @@
     },
     {
         "key": "cmd+p",
-        "command": "-workbench.action.quickOpen"
+        "command": "workbench.action.quickOpen"
+    },
+    {
+        "key": "*",
+        "command": "extension.vim_type",
+        "when": "editorFocus && vim.mode == 'Normal'"
+    },
+    {
+        "key": "backspace",
+        "command": "editor.action.accessibleViewAcceptInlineCompletion",
+        "when": "accessibleViewIsShown && accessibleViewCurrentProviderId == 'inlineCompletions'"
+    },
+    {
+        "key": "ctrl+/",
+        "command": "-editor.action.accessibleViewAcceptInlineCompletion",
+        "when": "accessibleViewIsShown && accessibleViewCurrentProviderId == 'inlineCompletions'"
+    },
+    {
+        "key": "cmd+/",
+        "command": "workbench.action.terminal.toggleTerminal",
+        "when": "terminal.active"
+    },
+    {
+        "key": "ctrl+`",
+        "command": "-workbench.action.terminal.toggleTerminal",
+        "when": "terminal.active"
+    },
+    {
+        "key": "cmd+i",
+        "command": "composerMode.agent"
+    },
+    {
+        "key": "alt+f5",
+        "command": "-workbench.action.editor.nextChange",
+        "when": "editorTextFocus && !textCompareEditorActive"
+    },
+    {
+        "key": "] c",
+        "command": "workbench.action.editor.nextChange",
+        "when": "editorTextFocus && vim.mode== 'Normal'"
+    },
+    {
+        "key": "[ c",
+        "command": "workbench.action.editor.previousChange",
+        "when": "editorTextFocus && vim.mode== 'Normal'"
     }
 ]
