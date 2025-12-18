@@ -1,0 +1,1 @@
+bind-key w display-popup -E -w 80% -h 60% "tmux list-windows -F '#I: #W' | fzf --reverse | cut -d ':' -f 1 | xargs tmux select-window -t"
